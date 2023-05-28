@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC:wght@700&family=Antic+Slab&family=Assistant:wght@200;300&family=Baskervville&family=BenchNine:wght@300;400&family=Chivo+Mono:wght@300&family=Cinzel:wght@400;500&family=Crushed&family=Dancing+Script:wght@500;600&family=Epilogue:wght@300&family=Glegoo&family=Instrument+Sans&family=Instrument+Serif&family=Inter+Tight:ital,wght@0,200;1,100&family=Josefin+Slab:wght@400;500&family=Kanit:wght@200;300&family=Libre+Baskerville:wght@400;700&family=Lobster+Two:ital@0;1&family=Marcellus&family=Oregano&family=Oswald:wght@300;400&family=Overlock+SC&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&family=Quicksand:wght@300;400&family=Raleway:wght@200&family=Roboto+Mono:wght@200;300&family=Vidaloka&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC:wght@700&family=Antic+Slab&family=Assistant:wght@200;300&family=Baskervville&family=BenchNine:wght@300;400&family=Chivo+Mono:wght@300&family=Cinzel:wght@400;500&family=Crushed&family=Dancing+Script:wght@500;600&family=Epilogue:wght@300&family=Glegoo&family=Instrument+Sans&family=Instrument+Serif&family=Inter+Tight:ital,wght@0,200;1,100&family=Josefin+Slab:wght@400;500&family=Kanit:wght@200;300&family=Libre+Baskerville:wght@400;700&family=Lobster+Two:ital@0;1&family=Marcellus&family=Oregano&family=Oswald:wght@300;400&family=Overlock+SC&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&family=Quicksand:wght@300;400&family=Raleway:wght@200&family=Roboto+Mono:wght@200;300&family=Urbanist:wght@300;400&family=Vidaloka&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Amatic+SC:wght@700&family=Antic+Slab&family=Assistant:wght@200;300&family=Baskervville&family=BenchNine:wght@300;400&family=Chivo+Mono:wght@300&family=Cinzel:wght@400;500&family=Crushed&family=Dancing+Script:wght@500;600&family=Epilogue:wght@300&family=Glegoo&family=Instrument+Sans&family=Instrument+Serif&family=Inter+Tight:ital,wght@0,200;1,100&family=Josefin+Slab:wght@400;500&family=Kanit:wght@200;300&family=Libre+Baskerville:wght@400;700&family=Lobster+Two:ital@0;1&family=Marcellus&family=Noto+Serif+Armenian&family=Oregano&family=Oswald:wght@300;400&family=Overlock+SC&family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400&family=Quicksand:wght@300;400&family=Raleway:wght@200&family=Roboto+Mono:wght@200;300&family=Urbanist:wght@300;400&family=Vidaloka&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(212, 211, 209);
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    background-image: url(img/pexels-ibraim-leonardo-2829793.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+.container{
+    background: linear-gradient(to right, rgb(93, 114, 138),  rgb(136, 167, 175)) ;
+    height: 100vh;
+}
+.logo{
+    margin-right: 150px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+.nav, .link{
+    display: flex;
+    justify-content: center;
+    font-family: 'Urbanist', sans-serif;
+}
+.agendamento{
+    border: 1px solid rgb(149, 210, 218);
+    border-radius: 10px;
+    padding: 0.8rem;
+}
+.link, .nav-link{
+    list-style: none;
+    text-decoration: none;
+    margin: 15px;
+    margin-top: 25px;
+    font-size: 18px;
+    color: white;
+}
+.Home{
+    display: flex;
+    justify-content: center;
+}
+.imagem{
+    margin-top: 150px;
+    margin-right: 140px;
+    background-color: rgb(91, 207, 236);
+    width: 350px;
+    height: 370px;
+}
+.msg-h1{
+    margin-left: 40px; 
+}
+.imagem img{
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.msg{
+    margin-top: 200px;
+    font-size: 40px;
+    width: 750px;
+    color: rgb(255, 255, 255);
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 3px;
+}
+.p-msg{
+    color: rgb(81, 88, 102);
+    margin-top: 30px;
+    width: 900px;
+    font-size: 19px;
+    font-family: 'Noto Serif Armenian', serif;
+}
+.h2-msg{
+    color: rgb(81, 88, 102);
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 1rem;
+    font-family: 'Urbanist', sans-serif;
+}
+.destaque1{
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(91, 207, 236);
+    font-family: 'Roboto Mono', monospace;
+}
+.text-h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: -330px;
+    font-family: 'Noto Serif Armenian', serif;
+    letter-spacing: 2px;
+}
+.smiley-face {
+    margin-top: -40px;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(15, 181, 247);
+  }
+.destaque{
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(91, 207, 236);
+    font-family: 'Roboto Mono', monospace;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 850px;
+    margin-top: 20px;
+}
+.flexbox.active .descricao{
+    height: auto;
+}
+.flexbox > div{
+    flex: 1 1 200px;
+}
+.card{
+    background-color: rgb(93, 133, 160);
+    margin: 15px;
+    height: 160px;
+    border-radius: 10px;
+    max-width: 850px;
+    box-shadow: 0 2px 2px rgba(86, 102, 121, 0.788);
+}
+.titulo{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    color: rgb(234, 240, 243)
+}
+.descricao{
+    font-size: 18px;
+    padding: 0.3rem;
+    color: rgb(62, 63, 66);
+    margin:15px;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.show{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(93, 133, 160);
+    color: rgba(63, 77, 95, 0.788);;
+    padding: 0.7rem;
+    font-size: 18px;
+    border-radius: 25px;
+    width: 150px;
+    height: 55px;
+    font-family: 'Urbanist', sans-serif;
+}
+.icone i{
+    display: none;
+}
+.contato{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#contato{
+    background-color: rgb(199, 198, 194);
+}
+.h2-contato{
+    display: flex;
+    padding: 1rem;
+    margin-top: 50px;
+    font-size: 30px;
+    justify-content: center;
+    font-family: 'Urbanist', sans-serif;
+    color:  rgb(93, 133, 160);
+    width: 800px;
+}
+
+.formulario, .form{
+    display: flex;
+    justify-content: center;
+}
+.img-side{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.text{
+    margin-top: 100px;
+    margin-right: 30px;
+    width: 500px;
+    font-size: 22px;
+    color: rgb(98, 114, 145);
+    font-family: 'Urbanist', sans-serif;
+}
+form{
+    padding: 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input-box label{
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(74, 85, 112);
+    margin-left: 16px;
+    font-family: 'Urbanist', sans-serif;
+}
+.input-mensagem label{
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(74, 85, 112);
+    margin-left: 16px;
+    font-family: 'Urbanist', sans-serif;
+}
+.input-mensagem textarea{
+    width: 405px;
+    height: 180px;
+    border: none;
+    outline: none;
+    border-radius: 17px;
+    margin: 1rem;
+    padding: 0.7rem;
+    background-color: #7f848b;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.botao .button {
+    margin-right: 10px;
+}
+#icon-button{
+    color: rgba(63, 77, 95, 0.788);
+    font-size: 22px;
+}
+#icon-button::after{
+    content: " ";
+    display: block;
+    width: 15px;
+    height: 0.1rem;
+    margin-left: 183px;
+    background-color: rgba(63, 77, 95, 0.788);
+    border-radius: 5rem;
+    position: absolute;
+}
+.icon{
+    margin-top: 3px;
+}
+.button{
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(93, 133, 160);
+    color: rgba(63, 77, 95, 0.788);
+    padding: 0.7rem;
+    font-size: 18px;
+    border-radius: 25px;
+    font-family: 'Urbanist', sans-serif;
+}
+.button i{
+    padding: 0.2rem;
+}
+.button:hover, .show:hover {
+    background-color:rgb(85, 116, 136) ;
+    transition: 0.2s;
+    transform: scale(0.9);
+
+}
+.input-box, .input-mensagem{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box input{
+    width: 400px;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    border: none;
+    outline: none;
+    padding: 0.9rem;
+    border-radius: 10px;
+    background-color: #7f848b;
+    box-shadow: 1px 1px 6px #0000001c;
+    cursor: pointer;
+}
+.input-mensagem textarea::placeholder, .input-box input::placeholder{
+    font-size: 16px;
+    color: rgb(219, 219, 219);
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 1px;
+}
+input:focus::placeholder{
+    color: black;
+}
+textarea:focus::placeholder{
+    color: black;
+}
+.input-box input:focus-visible{
+    color: black;
+    background-color: rgb(235, 235, 234);
+}
+.input-mensagem textarea:focus-visible{
+    color: black;
+    background-color: rgb(230, 230, 230);
+}
+.h1-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 33px;
+    color: rgb(71, 98, 122);
+}
+.p-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(69, 79, 88);
+}
+.redes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 30px;
+    padding: 5rem;
+}
+.redes-sociais{
+    padding: 2rem;
+    margin-top: -50px;
+    border-bottom: 1px solid #7f848b;
+}
+
+.descricao-icon{
+    font-size: 20px;
+    margin: 2px;
+}
+.redes .rede:nth-child(1) .icon i {
+    color: green;
+    font-size: 25px;
+    padding: 0.2rem;
+}
+.redes .rede:nth-child(2) .icon i{
+    color: rgb(117, 0, 128);
+    font-size: 25px;
+    padding: 0.2rem;
+}
+.redes .rede:nth-child(3) .icon i {
+    color: rgb(13, 0, 128);
+    font-size: 25px;
+    padding: 0.2rem;
+}
+.rede{
+    display: inline-flex;
+    justify-content: center;
+    margin:  0 25px;
+}
+.texto{
+    font-size: 20px;
+    margin-left: 55px ;
+    margin-top: 20px;
+    width: 500px;
+}
